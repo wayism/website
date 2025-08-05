@@ -72,3 +72,9 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      uses: peaceiris/actions-hugo@v2
+      - name: Build
+        run: |
+          hugo --minify
+          hugo --config config-ai.toml -d public/ai
