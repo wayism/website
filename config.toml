@@ -1,7 +1,7 @@
 baseURL = "https://wayism.org/"
 languageCode = "en-us"
 title = "Wayism - The Butterfly Path"
-theme = "Books"
+theme = "hugo-book"
 
 [params]
   description = "Existential philosophy where souls evolve into immortal spirits"
