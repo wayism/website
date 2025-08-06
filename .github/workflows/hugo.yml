@@ -68,6 +68,5 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
-           run: |
-          hugo --minify
+              hugo --minify
           hugo --config config-ai.toml -d public/ai
