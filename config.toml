@@ -1,4 +1,4 @@
-baseURL = "https://wayism.org/"
+baseURL = "https://wayism.github.io"
 languageCode = "en-us"
 title = "Wayism - The Butterfly Path"
 theme = "hugo-book"
