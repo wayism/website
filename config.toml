@@ -1,0 +1,46 @@
+baseURL = "https://wayism.org/"
+languageCode = "en-us"
+title = "Wayism - The Butterfly Path"
+theme = "hugo-book"
+
+[params]
+  description = "Existential philosophy where souls evolve into immortal spirits"
+  schemaType = "EducationalOrganization"
+  aiCrawlable = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS", "JSON"]
+  page = ["HTML", "JSON"]
+
+[languages]
+  [languages.en]
+    weight = 1
+  [languages.zh]
+    weight = 2
+  [languages.es]
+    weight = 3
+
+[permalinks]
+  ontology = "/ontology/:filename/"
+  faq = "/faq/:filename/"
+
+[related]
+  threshold = 80
+  includeNewer = true
+  
+  [[related.indices]]
+    name = "keywords"
+    weight = 100
+	
+  [[related.indices]]
+    name = "concepts"
+    weight = 200
+	[minify]
+  minifyOutput = true
+  [minify.html]
+    keepWhitespace = false
+  [minify.css]
+    keepCSS2 = true
+  [minify.js]
+    keepVarNames = false
